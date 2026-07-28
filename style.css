@@ -2,28 +2,94 @@
     --bg-color: #fafafa;
     --text-color: #2d3748;
     --heading-color: #1a202c;
-    --accent-color: #3182ce; /* Azul Técnico */
+    --accent-color: #3182ce; /* Azul técnico suave */
     --card-bg: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
-    font-family: 'Inter', system-ui, sans-serif;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
     line-height: 1.7;
 }
 
+/* Cabeçalho */
+.blog-header {
+    text-align: center;
+    padding: 3rem 1rem 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.blog-header h1 {
+    color: var(--heading-color);
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.blog-header p {
+    color: #718096;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Container Principal */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Cartão do Artigo */
 .post {
     background: var(--card-bg);
     border-radius: 16px;
     padding: 32px;
-    margin-bottom: 2rem;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); /* Sombra bem suave */
+    margin-bottom: 2.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); /* Sombra leve e elegante */
 }
 
 .category {
     color: var(--accent-color);
     font-weight: 600;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+.post-header h2 {
+    color: var(--heading-color);
+    font-size: 1.6rem;
+    margin-bottom: 1.2rem;
+}
+
+.post-content p {
+    margin-bottom: 1.2rem;
+}
+
+/* Estilização das Imagens (UX/Design) */
+.banner-img,
+.post-img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover; /* Ajusta a imagem sem distorcer */
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+}
+
+/* Rodapé */
+.blog-footer {
+    text-align: center;
+    padding: 2rem;
+    color: #a0aec0;
+    font-size: 0.9rem;
 }
