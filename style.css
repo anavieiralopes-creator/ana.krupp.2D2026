@@ -1,0 +1,29 @@
+:root {
+    --bg-color: #fafafa;
+    --text-color: #2d3748;
+    --heading-color: #1a202c;
+    --accent-color: #3182ce; /* Azul Técnico */
+    --card-bg: #ffffff;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Inter', system-ui, sans-serif;
+    line-height: 1.7;
+}
+
+.post {
+    background: var(--card-bg);
+    border-radius: 16px;
+    padding: 32px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); /* Sombra bem suave */
+}
+
+.category {
+    color: var(--accent-color);
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
